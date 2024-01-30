@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "inttypes.h": "c"
+  },
+  "cSpell.words": [
+    "nextstate",
+    "Ranluxpp",
+    "WALLCLOCK"
+  ]
+}
