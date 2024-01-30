@@ -24,7 +24,7 @@ fn main() {
         .warnings_into_errors(false)
         .debug(false)
         .opt_level(3)
-        .compiler("gcc")
+        .compiler("clang")
         .compile("ranluxpp");
 }
 
