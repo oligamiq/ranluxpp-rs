@@ -6,7 +6,6 @@ ranlux++ pRNG
 # use
 ```rust
 let rand = Ranluxpp::new();
-let rand = Ranluxpp::new();
 let mut x = [0u64; 9];
 rand.rand(&mut x);
 println!("{:?}", x);
