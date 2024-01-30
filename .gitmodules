@@ -1,0 +1,3 @@
+[submodule "ranluxpp-portable"]
+	path = ranluxpp-portable
+	url = https://github.com/jirka-h/ranluxpp-portable
