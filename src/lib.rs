@@ -10,7 +10,9 @@ pub struct Ranluxpp {
 }
 
 impl Ranluxpp {
+    /// ```
     /// let rand = Ranluxpp::new(1);
+    /// ```
     pub fn new(seed: u64) -> Self {
         let mut r: ranluxpp_t = ranluxpp_t {
             x: [0u64; 9],
@@ -22,10 +24,13 @@ impl Ranluxpp {
         Self { r }
     }
 
+    /// ```
+    /// use ranluxpp_rs::Ranluxpp;
     /// let mut rand = Ranluxpp::new(1);
     /// let mut x = [0u64; 9];
     /// rand.rand(&mut x);
     /// println!("{:?}", x);
+    /// ```
     pub fn rand(&mut self, x: &mut [u64; 9]) {
         x.copy_from_slice(&self.r.x);
         unsafe {
